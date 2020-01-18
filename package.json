@@ -1,0 +1,41 @@
+{
+  "name": "gitlab-control-panel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "email": "embarq.dev@gmail.com",
+    "name": "Igor Lee",
+    "url": "https://github.com/embarq"
+  },
+  "repository": {
+    "url": "https://github.com/embarq/gitlab-control-panel",
+    "type": "git"
+  },
+  "readme": "https://github.com/embarq/gitlab-control-panel/blob/master/README.md",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.tsx src/background.ts --no-content-hash",
+    "copy:html": "cp src/index.html dist",
+    "copy:manifest": "cp manifest.json dist",
+    "postbuild": "yarn copy:html && yarn copy:manifest"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.8.0",
+    "preact": "^8.4.2",
+    "preact-router": "^2.6.1",
+    "tslib": "1.10.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.91",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.20.1",
+    "typescript": "^3.4.5"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/embarq/gitlab-control-panel/blob/master/LICENSE"
+    }
+  ],
+}

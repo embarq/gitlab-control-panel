@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist",
+      "sourceMap": true,
+      "noImplicitAny": false,
+      "module": "es6",
+      "moduleResolution": "node",
+      "target": "es6",
+      "jsx": "react",
+      "jsxFactory": "h",
+      "typeRoots": [
+        "@types"
+      ],
+      "types": ["chrome"],
+      "lib": ["ES2015", "dom"],
+      "importHelpers": true
+    },
+    "include": ["./src/**/*"]
+  }
